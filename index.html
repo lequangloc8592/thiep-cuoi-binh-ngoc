@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đám cưới Bình & Ngọc</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              wedding: {
+                pink: '#dfa6b0', // Dusty pink
+                darkPink: '#b57b85',
+                lightPink: '#fceef0',
+                cream: '#fffdfc',
+                gray: '#7e8389', // Warm gray
+                darkGray: '#4a4a4a',
+                gold: '#C5A059'
+              }
+            },
+            fontFamily: {
+              script: ['"Dancing Script"', 'cursive'],
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Montserrat"', 'sans-serif'],
+            },
+            backgroundImage: {
+              'paper-texture': "url('https://www.transparenttextures.com/patterns/cream-paper.png')",
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-wedding-cream text-wedding-darkGray antialiased overflow-x-hidden selection:bg-wedding-pink selection:text-white">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
