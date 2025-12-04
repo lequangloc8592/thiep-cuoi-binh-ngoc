@@ -46,7 +46,7 @@ export const EVENTS_BRIDE = [
     locationName: "TẠI TƯ GIA NHÀ GÁI",
     address:
       "182 Tân Thành, Bắc Tân Uyên - TP. Hồ Chí Minh",
-    mapLink: "https://maps.google.com/?q=182+Tan+Thanh+Bac+Tan+Uyen"
+    mapLink: "https://maps.app.goo.gl/JCcBC9uqqrgEE3xL8"
   }
 ];
 
@@ -67,8 +67,9 @@ export const EVENTS_GROOM = [
     locationName: " Ấp Trung Hậu, Xã Xuân Quế, Tỉnh Đồng Nai",
     address:
       " Ấp Trung Hậu, Xã Xuân Quế, Tỉnh Đồng Nai",
-    mapLink: "google.com/maps/place/5R2V%2B8F9,+tt.+Tân+Thành,+Bắc+Tân+Uyên,+Bình+Dương,+Việt+Nam/@11.1500755,106.8408673,16.5z/data=!4m5!3m4!1s0x3174c16f0fa1fc23:0x48b5cd2a976bc127!8m2!3d11.1507875!4d106.8437344?entry=tts&g_ep=EgoyMDI1MDkxMC4wIPu8ASoASAFQAw%3D%3D&skid=13efb4a1-bf9e-4a6c-8c27-0cc92a9f031e"
-  }
+    mapLink:
+      "https://maps.app.goo.gl/CADyyKXpWWkcd9dc9",
+  },
 ];
 
 // ==========================================

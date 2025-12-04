@@ -1,6 +1,36 @@
 import React from "react";
 import { EVENTS_BRIDE, EVENTS_GROOM } from "../constants";
 
+const getMapHref = (mapLink: string | undefined, address: string) => {
+  // Nếu có sẵn mapLink
+  if (mapLink && mapLink.trim() !== "") {
+    const trimmed = mapLink.trim();
+
+    // Đã có http/https rồi thì dùng luôn
+    if (/^https?:\/\//i.test(trimmed)) return trimmed;
+
+    // Người dùng chỉ nhập "www.xxx..."
+    if (trimmed.startsWith("www.")) return `https://${trimmed}`;
+
+    // Người dùng nhập "google.com/maps/..." hoặc "maps.app.goo.gl/..."
+    if (
+      trimmed.includes("google.com/maps") ||
+      trimmed.includes("maps.app.goo.gl")
+    ) {
+      return trimmed.startsWith("http") ? trimmed : `https://${trimmed}`;
+    }
+
+    // Trường hợp khác: trả lại nguyên bản (tránh phá các URL đặc biệt)
+    return trimmed;
+  }
+
+  // Không có mapLink, fallback dùng address
+  if (!address) return "#";
+
+  const query = encodeURIComponent(address);
+  return `https://www.google.com/maps/search/?api=1&query=${query}`;
+};
+
 const SimpleEventCard = ({ item }) => {
   return (
     <div className="border border-gray-300 rounded-xl p-6 text-center space-y-4 bg-white">
@@ -37,11 +67,12 @@ const SimpleEventCard = ({ item }) => {
       <p className="text-sm font-semibold mt-2">{item.locationName}</p>
       <p className="text-sm text-gray-700">{item.address}</p>
 
-      {item.mapLink && (
+      {(item.mapLink || item.address) && (
         <a
-          href={item.mapLink}
+          href={getMapHref(item.mapLink, item.address)}
           className="inline-block mt-3 px-4 py-2 text-sm rounded-full border border-gray-400 hover:bg-gray-100 transition"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Xem bản đồ
         </a>
