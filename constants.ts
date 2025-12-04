@@ -61,7 +61,7 @@ export const EVENTS_GROOM = [
     month: "12",
     year: "2025",
     weekday: "CHỦ NHẬT",
-    lunarDate: "Tức ngày 13 Tháng 11 Năm Ất Tỵ ",
+    lunarDate: "Tức ngày 14 Tháng 11 Năm Ất Tỵ ",
     time: "11:00",
     note: "",
     locationName: " Ấp Trung Hậu, Xã Xuân Quế, Tỉnh Đồng Nai",
