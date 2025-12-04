@@ -40,7 +40,7 @@ export const EVENTS_BRIDE = [
     month: "12",
     year: "2025",
     weekday: "THỨ BẢY",
-    lunarDate: "Tức ngày 24 tháng 10 năm Ất Tỵ",
+    lunarDate: "Tức ngày 13 Tháng 11 Năm Ất Tỵ",
     time: "11:00",
     note: "",
     locationName: "TẠI TƯ GIA NHÀ GÁI",
@@ -61,13 +61,13 @@ export const EVENTS_GROOM = [
     month: "12",
     year: "2025",
     weekday: "CHỦ NHẬT",
-    lunarDate: "Tức ngày 21 tháng 06 năm Ất Tỵ",
-    time: "17:30",
+    lunarDate: "Tức ngày 13 Tháng 11 Năm Ất Tỵ ",
+    time: "11:30",
     note: "",
     locationName: " Ấp Trung Hậu, Xã Xuân Quế, Tỉnh Đồng Nai",
     address:
       " Ấp Trung Hậu, Xã Xuân Quế, Tỉnh Đồng Nai",
-    mapLink: "https://maps.google.com/?q=champa+island"
+    mapLink: "google.com/maps/place/5R2V%2B8F9,+tt.+Tân+Thành,+Bắc+Tân+Uyên,+Bình+Dương,+Việt+Nam/@11.1500755,106.8408673,16.5z/data=!4m5!3m4!1s0x3174c16f0fa1fc23:0x48b5cd2a976bc127!8m2!3d11.1507875!4d106.8437344?entry=tts&g_ep=EgoyMDI1MDkxMC4wIPu8ASoASAFQAw%3D%3D&skid=13efb4a1-bf9e-4a6c-8c27-0cc92a9f031e"
   }
 ];
 
@@ -122,14 +122,14 @@ export const GALLERY_IMAGES: GalleryImage[] = [
 // BANKING (FOR MONEY GIFTS)
 // ==========================================
 export const BANK_INFO_GROOM = {
-  bankName: "Techcombank",
-  accountNumber: "190333888999",
+  bankName: "vietcombank",
+  accountNumber: "1027135490",
   ownerName: "K VU AN BINH",
   qrCodeUrl: "/img/qr-code.jpg"
 };
 
 export const BANK_INFO_BRIDE = {
-  bankName: "Vietcombank",
+  bankName: "BIDV",
   accountNumber: "0071000123456",
   ownerName: "NGUYEN THI HONG NGOC",
   qrCodeUrl: "/img/qr-code.jpg"
@@ -143,14 +143,14 @@ export const GIFT_ACCOUNTS = {
     label: "Nhà Trai",
     title: "K VU AN BINH",
     bank: "Vietcombank",
-    account: "190333888999",
+    account: "1027135490",
     qrImage: "/img/qr-groom.png", // đặt file ảnh vào public/img/qr-groom.png
   },
   bride: {
     label: "Nhà Gái",
     title: "NGUYEN THI HONG NGOC",
     bank: "BIDV",
-    account: "0123456789",
+    account: "6514329979",
     qrImage: "/img/qr-bride.png", // đặt file ảnh vào public/img/qr-bride.png
   },
 };
